@@ -1,0 +1,157 @@
+// Asset Paths
+$fontPath: '../font/';
+$imgPath: '../img/';
+
+// Font Definitions
+$font-primary: 'True Lies', sans-serif;
+
+// Grid Definitions
+$breakpoints: (
+  max: 1550px,
+  large: 1024px,
+  medium: 768px,
+  small: 500px,
+);
+
+// $grid-column-count: 12;
+// $grid-gutter-width: 50px;
+
+// Animation Speeds
+$animate-speed-quick: 150ms;
+$animate-speed-default: 250ms;
+$animate-speed-delayed: 750ms;
+
+// Color Palettes
+// Note: NavGrey will NOT end up in final color palette
+$palettes: (
+  white : (
+    base  : #fff
+  ),
+  red   : (
+    dark : #48110e,
+    base  : #a30010,
+  ),
+  grey  : (
+    dark  : #404040,
+    base  : #474747,
+    light : #d2d2d2,
+    lighter : #efefef
+  ),
+  black : (
+    base  : #202020
+  ),
+  navGrey : (
+    base : #636161,
+    item : #d8d8d8
+  )
+);
+
+// ========================================
+//  T Y P O G R A P H I C    S C A L E
+// ========================================
+// naming convention from adobe conventions.
+// ref: https://en.wikipedia.org/wiki/Font#Optical_size
+
+// Font Size Definitions
+// TODO: Review this approach for font styling with team
+// DISCLAIMER: THIS IS A STARTING POINT - NOT EXPECTING THESE EXACT VALUES
+// TO PERSIST - NEED TO WORK WITH DESIGN
+$fontsize: (
+  poster: 5rem, // 70px
+  posterSmall: 4.4rem, // 60px
+  display: 3.125rem, // 50px
+  displaySmall: 2.5rem, // 40px
+  displaySmallest: 1.825rem, // 30px
+  subhead: 1.5625rem, // 25px
+  subheadSmall: 1.375rem, // 22px
+  subheadSmallest: 1.125rem, // 18px
+  lead: 1.375rem, // 22px
+  body: 1.25rem, // 20px
+  smtext: 1rem, // 16px
+  caption: 0.8125rem, // 13px
+  captionSmall: 0.75rem, // 12px
+  footnote: 0.8125rem, // 13px
+  button: 1rem, // 16px
+  buttonSmall: 0.8125rem, // 13px
+  buttonSmallest: 0.875rem // 14px
+);
+
+$fontsize-mobile: (
+  poster: 5rem,
+  posterSmall: 4.4rem,
+  display: 3.125rem,
+  displaySmall: 2.5rem,
+  displaySmallest: 1.4rem,
+  subhead: 1.4rem,
+  subheadSmall: 1.28rem,
+  subheadSmallest: 1.15rem,
+  lead: 1.28rem,
+  body: 1.15rem,
+  smtext: 1rem,
+  caption: 1.05rem,
+  captionSmall: 1rem,
+  footnote: 0.9rem,
+  button: 1.15rem,
+  buttonSmall: 0.9rem,
+  buttonSmallest: 1rem
+);
+
+$lineheight: (
+  poster: 1,
+  posterSmall: 1,
+  display: 1,
+  displaySmall: 1,
+  displaySmallest: 1,
+  subhead: 1.2,
+  subheadSmall: 1.2,
+  subheadSmallest: 1.2,
+  lead: 1.4,
+  body: 1.4,
+  smtext: 1.4,
+  caption: 1.462,
+  captionSmall: 1.4,
+  footnote: 1.4,
+  button: 1.4,
+  buttonSmall: 1.4,
+  buttonSmallest: 1.4
+);
+
+$lineheight-mobile: (
+  poster: 1.06,
+  posterSmall: 1.09,
+  display: 1.09,
+  displaySmall: 1.08,
+  displaySmallest: 1.09,
+  subhead: 1.1,
+  subheadSmall: 1.1,
+  subheadSmallest: 1.25,
+  lead: 1.44,
+  body: 1.44,
+  smtext: 1.5,
+  caption: 1.4,
+  captionSmall: 1.4,
+  footnote: 1.4,
+  button: 1.4,
+  buttonSmall: 1.4,
+  buttonSmallest: 1.4
+);
+
+$fontfamily: (
+  poster: $font-primary,
+  posterSmall: $font-primary,
+  display: $font-primary,
+  displaySmall: $font-primary,
+  displaySmallest: $font-primary,
+  subhead: $font-primary,
+  subheadSmall: $font-primary,
+  subheadSmallest: $font-primary,
+  lead: $font-primary,
+  body: $font-primary,
+  smtext: $font-primary,
+  caption: $font-primary,
+  captionSmall: $font-primary,
+  footnote: $font-primary,
+  button: $font-primary,
+  buttonSmall: $font-primary,
+  buttonSmallest: $font-primary
+);

@@ -1,0 +1,48 @@
+// Pallette Lookup Function
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+// Z-Index Lookup Function
+@function z-index($layer) {
+  @return map-get($zindices, $layer);
+}
+
+// Breakpoint Lookup Function
+@function bp($bp) {
+  @return map-get($breakpoints, $bp);
+}
+
+// Define a Responsive Breakpoint
+@mixin breakpoint($min:0px, $max:9999px) {
+  @media (min-width: #{$min}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+// Define a Responsive Breakpoint from $min up
+@mixin breakpoint-min($min) {
+  @include breakpoint($min) {
+    @content;
+  }
+}
+
+// Define a Responsive Breakpoint from 0 to $max
+@mixin breakpoint-max($max) {
+  @include breakpoint(0px, $max) {
+    @content;
+  }
+}
+
+@mixin type($name) {
+
+  font-size: map-get($fontsize, $name);
+  line-height: map-get($lineheight, $name);
+  font-family: map-get($fontfamily, $name);
+
+  @include breakpoint-max(bp(small)) {
+    font-size: map-get($fontsize-mobile, $name);
+    line-height: map-get($lineheight-mobile, $name);
+  }
+
+}
