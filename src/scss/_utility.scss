@@ -1,0 +1,35 @@
+// All the utilities
+
+.u-show {
+  display: block !important;
+}
+
+.u-hide {
+  display: none !important;
+}
+
+// TODO: create similar utilities for min breakpoint
+@each $name, $value in $breakpoints {
+  .u-hide-#{$name} {
+    @include breakpoint-max($value) {
+      display: none !important;
+    }
+  }
+
+  .u-show-#{$name} {
+    @include breakpoint-max($value) {
+      display: block !important;
+    }
+  }
+}
+
+.u-clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}

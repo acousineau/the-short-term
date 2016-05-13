@@ -1,0 +1,103 @@
+// Core
+@import "reset";
+@import "variables";
+@import "functions";
+@import "utility";
+@import "typography";
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  text-align: center;
+  height: 100vh;
+  background-color: #fafafa;
+  
+  .app {
+    height: 100%;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -0.5em;
+    }
+  }
+
+  .centered {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 400px;
+    width: 95%;
+
+    > * {
+      margin-bottom: 1em;
+    }
+  }
+
+  .album {
+    position: relative;
+    background-image: url('#{$imgPath}rainbow-background.png');
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    margin: auto;
+    box-shadow: 5px 5px 35px #ddd;
+    margin-bottom: 1em;
+    padding-top: 100%;
+
+    h1 {
+      color: palette(white);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-61%, -39%);
+
+      span {
+        display: block;
+        transform: rotate(-25deg);
+        margin-bottom: 1.4rem;
+      }
+
+      span:first-child {
+        transform: rotate(-25deg) translate(0);
+        margin-bottom: 1.8rem;
+      }
+
+      span:last-child {
+        transform: rotate(-25deg) translateX(2rem);
+        margin-bottom: 1.8rem;
+      }
+    }
+  }
+
+  .social {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    a {
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  #countdown {
+    color: palette(black);
+
+    &:hover {
+      color: #2C82C9;
+    }
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 8px;
+  }
+}

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "node devServer.js"
   },
   "repository": {
     "type": "git",
@@ -32,12 +32,15 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.0",
+    "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.10.0",
     "webpack-merge": "^0.12.0"
   },
   "dependencies": {
     "moment": "^2.13.0",
     "react": "^15.0.2",
+    "react-dom": "^15.0.2",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.0",
     "redux": "^3.5.2"
